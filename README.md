@@ -1,1 +1,1 @@
-# Improving Multimodal Large Language Model Accuracy in Visual Estimation Through Integrating Self-Generated Side Information
+# Improving Multimodal LLM Accuracy in Visual Estimation Through Self-Generated Side Information
