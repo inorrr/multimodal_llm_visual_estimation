@@ -2,6 +2,30 @@
 from PIL import Image
 import os
 
+def rename_images_in_folder(folder_path, min_range, max_range):
+    """
+    Renames all images in a folder to match the specified range (e.g., 001.jpg, 002.jpg, etc.).
+    
+    Parameters:
+    folder_path (str): The path to the folder containing the images.
+    min_range (int): The starting number for renaming.
+    max_range (int): The ending number for renaming.
+    """
+    # Generate the new filenames based on the range
+    new_filenames = [
+        f"{str(i).zfill(3)}.jpg" for i in range(min_range, max_range + 1)
+    ]
+    
+    # Get a list of files in the folder
+    files = sorted(os.listdir(folder_path))  # Assuming sorting is needed
+
+    # Rename files to match the range
+    for i, new_name in enumerate(new_filenames):
+        old_path = os.path.join(folder_path, files[i])
+        new_path = os.path.join(folder_path, new_name)
+        os.rename(old_path, new_path)
+        print(f"Renamed: {old_path} -> {new_path}")
+
 def crop_to_square(image_path, output_path=None):
     """
     Crop an image to a square around the center.
@@ -68,7 +92,11 @@ def resize_image(image_path, output_path=None, new_size=(1080, 1080)):
 if __name__ == "__main__":
     #image_path = "test_image.jpg"  # Replace with the path to your image
     #crop_to_square(image_path, "test_image_result.jpg")
-    image_path = "test_image_result.jpg"  # Replace with the path to your image
-    resize_image(image_path=image_path, output_path="test_resize_result.jpg")
+    #image_path = "test_image_result.jpg"  # Replace with the path to your image
+    #resize_image(image_path=image_path, output_path="test_resize_result.jpg")
+
+    folder_path = "photos_to_rename"
+    rename_images_in_folder(folder_path, 1, 32)
+
 
 
