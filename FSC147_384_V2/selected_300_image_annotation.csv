@@ -26,53 +26,53 @@ filename,class,object_count,human
 6164.jpg,tomatoes,101,150.0
 2955.jpg,stamps,105,105.0
 7129.jpg,keyboard keys,104,104.0
-7658.jpg,chairs,211,
-7103.jpg,cars,48,
-6031.jpg,cupcake tray,12,
-4947.jpg,tree logs,205,
-3191.jpg,candles,12,
-5204.jpg,donuts tray,12,
-6395.jpg,beads,39,
-3707.jpg,chewing gum pieces,14,
-72.jpg,tomatoes,189,
-2523.jpg,spoon,8,
-6747.jpg,people,37,
-4975.jpg,pigeons,11,
-4251.jpg,cupcake tray,12,
-3705.jpg,spring rolls,31,
-2487.jpg,lipstick,12,
-3144.jpg,coffee beans,54,
-4221.jpg,biscuits,10,
-1903.jpg,bottle caps,139,
-982.jpg,birds,50,
-4601.jpg,kiwis,8,
-1458.jpg,keyboard keys,162,
-4413.jpg,hot air balloons,11,
-4282.jpg,cupcake tray,12,
-6514.jpg,beads,31,
-3587.jpg,chicken wings,9,
-501.jpg,geese,19,
-7187.jpg,pencils,50,
-5297.jpg,potatoes,32,
-5959.jpg,cranes,10,
-2128.jpg,pens,12,
-4588.jpg,kiwis,8,
-827.jpg,bottle caps,40,
-6089.jpg,chicken wings,19,
-3837.jpg,lighters,50,
-6883.jpg,oranges,70,
-6635.jpg,pens,10,
-4436.jpg,tomatoes,27,
-6297.jpg,pills,16,
-2895.jpg,caps,29,
-7624.jpg,cartridges,53,
-740.jpg,ants,10,
-524.jpg,geese,30,
-7581.jpg,comic books,30,
-3258.jpg,beads,9,
-3802.jpg,crayons,12,
-836.jpg,books,230,
-3304.jpg,cupcake tray,8,
+7658.jpg,chairs,211,180.0
+7103.jpg,cars,48,50.0
+6031.jpg,cupcake tray,12,12.0
+4947.jpg,tree logs,205,180.0
+3191.jpg,candles,12,13.0
+5204.jpg,donuts tray,12,12.0
+6395.jpg,beads,39,39.0
+3707.jpg,chewing gum pieces,14,14.0
+72.jpg,tomatoes,189,300.0
+2523.jpg,spoon,8,8.0
+6747.jpg,people,37,37.0
+4975.jpg,pigeons,11,11.0
+4251.jpg,cupcake tray,12,12.0
+3705.jpg,spring rolls,31,32.0
+2487.jpg,lipstick,12,13.0
+3144.jpg,coffee beans,54,52.0
+4221.jpg,biscuits,10,10.0
+1903.jpg,bottle caps,139,150.0
+982.jpg,birds,50,49.0
+4601.jpg,kiwis,8,8.0
+1458.jpg,keyboard keys,162,150.0
+4413.jpg,hot air balloons,11,11.0
+4282.jpg,cupcake tray,12,12.0
+6514.jpg,beads,31,30.0
+3587.jpg,chicken wings,9,9.0
+501.jpg,geese,19,19.0
+7187.jpg,pencils,50,50.0
+5297.jpg,potatoes,32,32.0
+5959.jpg,cranes,10,10.0
+2128.jpg,pens,12,12.0
+4588.jpg,kiwis,8,8.0
+827.jpg,bottle caps,40,40.0
+6089.jpg,chicken wings,19,18.0
+3837.jpg,lighters,50,45.0
+6883.jpg,oranges,70,68.0
+6635.jpg,pens,10,10.0
+4436.jpg,tomatoes,27,24.0
+6297.jpg,pills,16,16.0
+2895.jpg,caps,29,29.0
+7624.jpg,cartridges,53,49.0
+740.jpg,ants,10,10.0
+524.jpg,geese,30,32.0
+7581.jpg,comic books,30,30.0
+3258.jpg,beads,9,10.0
+3802.jpg,crayons,12,12.0
+836.jpg,books,230,240.0
+3304.jpg,cupcake tray,8,8.0
 1892.jpg,bottle caps,180,
 4602.jpg,kiwis,54,
 3706.jpg,chewing gum pieces,10,
