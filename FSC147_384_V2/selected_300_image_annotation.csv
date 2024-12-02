@@ -73,18 +73,18 @@ filename,class,object_count,human
 3802.jpg,crayons,12,12.0
 836.jpg,books,230,240.0
 3304.jpg,cupcake tray,8,8.0
-1892.jpg,bottle caps,180,
-4602.jpg,kiwis,54,
-3706.jpg,chewing gum pieces,10,
-5245.jpg,cupcakes,12,
-6982.jpg,cereals,27,
-4466.jpg,tomatoes,12,
-2554.jpg,alcohol bottles,48,
-4516.jpg,bananas,25,
-4380.jpg,cranes,17,
-3092.jpg,bread rolls,9,
-7235.jpg,lipstick,30,
-3610.jpg,ice cream,24,
+1892.jpg,bottle caps,180,180.0
+4602.jpg,kiwis,54,50.0
+3706.jpg,chewing gum pieces,10,10.0
+5245.jpg,cupcakes,12,12.0
+6982.jpg,cereals,27,27.0
+4466.jpg,tomatoes,12,12.0
+2554.jpg,alcohol bottles,48,50.0
+4516.jpg,bananas,25,27.0
+4380.jpg,cranes,17,17.0
+3092.jpg,bread rolls,9,9.0
+7235.jpg,lipstick,30,30.0
+3610.jpg,ice cream,24,24.0
 7089.jpg,cars,155,
 7151.jpg,zebras,148,
 7048.jpg,bricks,288,
