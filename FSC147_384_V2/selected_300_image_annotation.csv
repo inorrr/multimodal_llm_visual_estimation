@@ -85,71 +85,71 @@ filename,class,object_count,human
 3092.jpg,bread rolls,9,9.0
 7235.jpg,lipstick,30,30.0
 3610.jpg,ice cream,24,24.0
-7089.jpg,cars,155,
-7151.jpg,zebras,148,
-7048.jpg,bricks,288,
-757.jpg,birds,9,
-6559.jpg,pigeons,66,
-6917.jpg,cereals,29,
-2673.jpg,bowls,14,
-5942.jpg,eggs,10,
-6959.jpg,markers,212,
-3410.jpg,nuts,59,
-2561.jpg,alcohol bottles,50,
-5320.jpg,candles,33,
-4597.jpg,kiwis,64,
-3635.jpg,jade stones,25,
-7424.jpg,eggs,145,
-7193.jpg,horses,13,
-6129.jpg,cars,199,
-3184.jpg,candles,8,
-7598.jpg,sheep,31,
-4105.jpg,oyster shells,12,
-613.jpg,seagulls,7,
-3268.jpg,finger foods,19,
-395.jpg,pigeons,69,
-4028.jpg,beads,107,
-4787.jpg,balls,57,
-3617.jpg,gemstones,12,
-710.jpg,apples,16,
-3106.jpg,naan bread,19,
-6213.jpg,coins,8,
-6821.jpg,boxes,42,
-4020.jpg,beads,73,
-3121.jpg,coffee beans,60,
-7554.jpg,markers,71,
-5647.jpg,cotton balls,14,
-4740.jpg,peaches,14,
-7540.jpg,fresh cut,64,
-5291.jpg,potatoes,11,
-2332.jpg,bricks,69,
-3592.jpg,chicken wings,12,
-3425.jpg,polka dots,885,
-7138.jpg,caps,46,
-6165.jpg,tomatoes,36,
-5982.jpg,bread rolls,18,
-3571.jpg,chicken wings,25,
-7517.jpg,cups,30,
-6356.jpg,shoes,85,
-5025.jpg,bread rolls,17,
-6348.jpg,shoes,32,
-4772.jpg,balls,16,
-4439.jpg,tomatoes,40,
-3180.jpg,buns,12,
-2273.jpg,apples,165,
-5738.jpg,polka dots,27,
-5597.jpg,marbles,128,
-960.jpg,birds,13,
-535.jpg,geese,18,
-1981.jpg,bottle caps,159,
-2465.jpg,windows,23,
-6709.jpg,geese,9,
-2526.jpg,spoon,13,
-7119.jpg,shoes,59,
-4970.jpg,tree logs,44,
-6453.jpg,beads,15,
-681.jpg,watches,24,
-4645.jpg,geese,15,
+7089.jpg,cars,155,180.0
+7151.jpg,zebras,148,160.0
+7048.jpg,bricks,288,288.0
+757.jpg,birds,9,9.0
+6559.jpg,pigeons,66,61.0
+6917.jpg,cereals,29,28.0
+2673.jpg,bowls,14,13.0
+5942.jpg,eggs,10,10.0
+6959.jpg,markers,212,214.0
+3410.jpg,nuts,59,59.0
+2561.jpg,alcohol bottles,50,48.0
+5320.jpg,candles,33,33.0
+4597.jpg,kiwis,64,35.0
+3635.jpg,jade stones,25,26.0
+7424.jpg,eggs,145,150.0
+7193.jpg,horses,13,14.0
+6129.jpg,cars,199,190.0
+3184.jpg,candles,8,8.0
+7598.jpg,sheep,31,31.0
+4105.jpg,oyster shells,12,12.0
+613.jpg,seagulls,7,8.0
+3268.jpg,finger foods,19,19.0
+395.jpg,pigeons,69,64.0
+4028.jpg,beads,107,108.0
+4787.jpg,balls,57,52.0
+3617.jpg,gemstones,12,12.0
+710.jpg,apples,16,15.0
+3106.jpg,naan bread,19,19.0
+6213.jpg,coins,8,8.0
+6821.jpg,boxes,42,49.0
+4020.jpg,beads,73,72.0
+3121.jpg,coffee beans,60,60.0
+7554.jpg,markers,71,72.0
+5647.jpg,cotton balls,14,14.0
+4740.jpg,peaches,14,14.0
+7540.jpg,fresh cut,64,66.0
+5291.jpg,potatoes,11,11.0
+2332.jpg,bricks,69,71.0
+3592.jpg,chicken wings,12,11.0
+3425.jpg,polka dots,885,576.0
+7138.jpg,caps,46,47.0
+6165.jpg,tomatoes,36,33.0
+5982.jpg,bread rolls,18,18.0
+3571.jpg,chicken wings,25,26.0
+7517.jpg,cups,30,30.0
+6356.jpg,shoes,85,84.0
+5025.jpg,bread rolls,17,20.0
+6348.jpg,shoes,32,32.0
+4772.jpg,balls,16,16.0
+4439.jpg,tomatoes,40,38.0
+3180.jpg,buns,12,12.0
+2273.jpg,apples,165,132.0
+5738.jpg,polka dots,27,28.0
+5597.jpg,marbles,128,168.0
+960.jpg,birds,13,13.0
+535.jpg,geese,18,18.0
+1981.jpg,bottle caps,159,170.0
+2465.jpg,windows,23,21.0
+6709.jpg,geese,9,9.0
+2526.jpg,spoon,13,13.0
+7119.jpg,shoes,59,60.0
+4970.jpg,tree logs,44,47.0
+6453.jpg,beads,15,16.0
+681.jpg,watches,24,24.0
+4645.jpg,geese,15,15.0
 4617.jpg,geese,17,
 6449.jpg,beads,107,
 5372.jpg,marbles,31,
