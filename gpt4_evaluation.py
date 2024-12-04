@@ -182,7 +182,7 @@ def get_hints(images_path, csv_to_read, csv_to_write):
 
 if __name__ == "__main__":
     images_path = "FSC147_384_V2/selected_300_images" 
-    csv_path = "FSC147_384_V2/selected_300_image_annotation.csv" 
+    csv_path = "FSC147_384_V2/300_image_labels.csv" 
     gpt4_evaluation_csv_path = "results/gpt4_evaluation.csv"
     # get_inital_count(images_path, csv_to_read=csv_path, csv_to_write=gpt4_evaluation_csv_path)
     get_hints(images_path, csv_to_read=csv_path, csv_to_write=gpt4_evaluation_csv_path)
