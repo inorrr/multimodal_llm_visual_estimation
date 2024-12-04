@@ -49,7 +49,7 @@ def next_image():
 
 # Paths
 folder_path =  'FSC147_384_V2/selected_300_images'
-csv_path = 'FSC147_384_V2/selected_300_image_annotation.csv'
+csv_path = 'results/human_evaluation.csv'
 
 df = load_data(csv_path)
 

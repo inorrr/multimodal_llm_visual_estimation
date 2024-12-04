@@ -20,7 +20,7 @@ import pandas as pd
 source_folder = 'FSC147_384_V2/images_384_VarV2'
 destination_folder = 'FSC147_384_V2/selected_300_images'
 source_txt_path = 'FSC147_384_V2/ImageClasses_FSC147.txt'
-destination_csv_path = 'FSC147_384_V2/selected_300_image_annotation.csv'
+destination_csv_path = 'FSC147_384_V2/300_image_labels.csv'
 annotation_json_path = 'FSC147_384_V2/annotation_FSC147_384.json'
 
 
