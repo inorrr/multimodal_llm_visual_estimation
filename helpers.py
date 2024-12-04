@@ -1,4 +1,5 @@
 import base64
+import pandas as pd
 
 def encode_image(image_path):
     """
@@ -35,6 +36,13 @@ def count_with_hint_prompt(object_name, description, direct_hint, indirect_hint)
     prompt = start + f"""{description}""" + '\n' + f"""{direct_hint}""" + '\n' + f"""{indirect_hint}""" + '\n' + base_prompt
     return prompt
 
+
+def drop_column(file_path, column_name):
+    file = pd.read_csv(file_path)
+    file = file.drop(column_name, axis=1)
+    file.to_csv(file_path, index=False)
+    
 if __name__ == "__main__":
-    print(count_with_hint_prompt("apples", "description", "direct hint", "indirect hint"))
+    #print(count_with_hint_prompt("apples", "description", "direct hint", "indirect hint"))
     # print(side_information_prompt("apples"))
+    drop_column("results/gpt4_evaluation.csv", "human")
