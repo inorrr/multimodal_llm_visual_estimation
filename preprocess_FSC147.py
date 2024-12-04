@@ -10,12 +10,12 @@ Note: This script is provided 'as is' without warranty. The user assumes all res
 
 """
 
-import numpy as np
 import random
 import os
 import shutil
 import csv
 import json
+import pandas as pd
 
 source_folder = 'FSC147_384_V2/images_384_VarV2'
 destination_folder = 'FSC147_384_V2/selected_300_images'
@@ -81,8 +81,27 @@ def update_csv_with_object_counts(selected_filenames):
         writer = csv.writer(outfile)
         writer.writerows(rows)
 
+def cleaning():
+
+    df = pd.read_csv(destination_csv_path)
+
+    filenames_in_csv = set(df['filename'].tolist())
+
+    # Directory containing the images
+    image_directory = destination_folder
+
+    # Iterate over files in the image directory
+    for filename in os.listdir(image_directory):
+        if filename not in filenames_in_csv:
+            file_path = os.path.join(image_directory, filename)
+            if os.path.isfile(file_path):
+                print(f"Removing {file_path}")  # For logging purposes
+                os.remove(file_path)  # Remove the file
+
+    print("Cleaning up complete.")   
 
 if __name__ == "__main__":
-    selected_filenames = select_random_300_images()
-    create_class_file_for_selected_images(selected_filenames)
-    update_csv_with_object_counts(selected_filenames)
+    # selected_filenames = select_random_300_images()
+    # create_class_file_for_selected_images(selected_filenames)
+    # update_csv_with_object_counts(selected_filenames)
+    cleaning()
