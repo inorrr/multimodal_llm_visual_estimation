@@ -13,12 +13,12 @@ This is the complete repository for the project: **Improving Multi-modal Languag
 4. **DONE:** gpt4: 
     - **DONE:** gpt4 initial prediction.
     - **DONE:** gpt4 hints: description, direct hint, indirect hint
-        - **WORKING:** split the hints to three entries
-    - gpt4 prediction with hint:
-        - Description only
-        - direct hint only
-        - indirect hint only
-        - all three
+        - **DONE:** split the hints to three entries
+    - **DONE:** gpt4 prediction with hint:
+        - **DONE:** Description only
+        - **DONE:** direct hint only
+        - **DONE:** indirect hint only
+        - **DONE:** ll three
 4. CLIP: 
     - CLIP initial prediction.
     - CLIP hints: description, direct hint, indirect hint

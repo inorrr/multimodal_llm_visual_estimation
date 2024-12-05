@@ -3,7 +3,7 @@ from openai import OpenAI
 import os
 # import base64
 import helpers
-import re
+# import re
 
 client = OpenAI()
 # Function to encode the image
@@ -229,11 +229,102 @@ def split_response(csv_in, csv_out):
     df.to_csv(csv_out, index=False)
     print("CSV file has been modified and saved.")
 
+def get_gpt_response_with_hints(csv_in, csv_out, description, direct, indirect):
+    df = pd.read_csv(csv_in)
+    parts = []
+    if description:
+        parts.append("desc_true")
+    else:
+        parts.append("desc_false")
+    if direct:
+        parts.append("direct_true")
+    else:
+        parts.append("direct_false")
+    if indirect:
+        parts.append("indirect_true")
+    else:
+        parts.append("indirect_false")
+    column_name = "response_" + "_".join(parts)
+    df[column_name] = None
+    
+    for index, row in df.iterrows():
+        filename = row['filename']
+        object_name = row['class']
+        if description:
+            description_text = row['description']
+        else: 
+            description_text = ''
+
+        if direct:
+            direct_text = row['direct_hint']
+        else: 
+            direct_text = ''
+        
+        if indirect:
+            indirect_text = row['indirect_hint']
+        else: 
+            indirect_text = ''
+
+        image_path = os.path.join(images_path, filename)
+        
+        if os.path.exists(image_path):
+            # Get the object count from the model
+            count = count_with_hint(object_name, image_path, description_text, direct_text, indirect_text)
+            try:
+                # Attempt to convert count to an integer
+                int_count = int(count)
+                df.at[index, column_name] = int_count
+            except ValueError:
+                # If conversion fails, set the count to pd.NA
+                df.at[index, column_name] = pd.NA
+            print("-------------------------")
+            print(count)
+            df.to_csv(csv_out, index=False)
+        else:
+            print(f"Image {filename} not found at {image_path}")
+            df.to_csv(csv_out, index=False)
+
+
+def count_with_hint(object_name, image_path, description, direct_hint, indirect_hint):
+    try:
+        prompt = helpers.count_with_hint_prompt(object_name, description, direct_hint, indirect_hint)
+        base64_image = helpers.encode_image(image_path)
+
+        response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {
+            "role": "user",
+            "content": [
+                {
+                "type": "text",
+                "text": prompt,},
+                {
+                "type": "image_url",
+                "image_url": {"url":  f"data:image/jpeg;base64,{base64_image}"},
+                },
+            ],
+            }
+        ],
+        )
+        content = response.choices[0].message.content
+        return content.strip()
+    
+    except Exception as e:
+        print(f"Error processing {image_path}: {e}")
+        return None
+
+
 if __name__ == "__main__":
     images_path = "FSC147_384_V2/selected_300_images" 
     csv_path = "FSC147_384_V2/300_image_labels.csv" 
     gpt4_evaluation_csv_path = "results/gpt4_evaluation.csv"
     gpt4_splited_response = "results/gpt4_evaluation_splited.csv"
+    gpt4_experiments = "results/gpt4_experiments.csv"
     # get_inital_count(images_path, csv_to_read=csv_path, csv_to_write=gpt4_evaluation_csv_path)
     # get_hints(images_path, csv_to_read=csv_path, csv_to_write=gpt4_evaluation_csv_path)
-    split_response(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path)
+    # split_response(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path)
+    get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=True, direct=True, indirect=True)
+    get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=True, direct=False, indirect=False)
+    get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=False, direct=True, indirect=False)
+    get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=False, direct=False, indirect=True)
