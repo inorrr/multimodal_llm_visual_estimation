@@ -96,18 +96,6 @@ def get_inital_count(images_path, csv_to_read, csv_to_write):
     #df.to_csv(csv_path, index=False)
     #print("Updated CSV saved.")
 
-def split_response(response):
-    
-    # Splitting the response by double line breaks
-    sections = response.split('\n\n')
-
-    # Assuming that the structure is always the same and sections[0] is description, sections[1] is direct hint, and sections[2] is indirect hint
-    description = sections[0].split('**Description:** ')[1]
-    direct_hint = sections[1].split('**Direct hint:** ')[1]
-    indirect_hint = sections[2].split('**Indirect hint:** ')[1]
-    
-    return description, direct_hint, indirect_hint
-
 def generate_side_information(image_path, object_name):
     try:
         prompt = helpers.side_information_prompt(object_name)
@@ -180,9 +168,72 @@ def get_hints(images_path, csv_to_read, csv_to_write):
     # Save the DataFrame after processing all rows to minimize I/O operations
     # df.to_csv(csv_to_write, index=False)
 
+def extract_section(full_response, section):
+    # Check if the response exists and is not NaN
+    if pd.isna(full_response):
+        return None
+    
+    # Define possible start and stop strings for each section
+    if section == "description":
+        starts = ["1. **Description:**", "### 1. Description:", "1. **Description**:", 
+                  "### 1. Description:", "1. **Description:**", "1. **Description**:"]
+        stops = ["2. **Direct hint:**", "### 2. Direct Hint:", "2. **Direct hint**:", 
+                 "### 2. Direct hint:", "2. **Direct Hint:**", "2. **Direct Hint**:"]
+    elif section == "direct_hint":
+        starts = ["2. **Direct hint:**", "### 2. Direct Hint:", "2. **Direct hint**:", 
+                  "### 2. Direct hint:", "2. **Direct Hint:**", "2. **Direct Hint**:"]
+        stops = ["3. **Indirect hint:**", "### 3. Indirect Hint:", "3. **Indirect hint**:", 
+                 "### 3. Indirect hint:", "3. **Indirect Hint:**", "3. **Indirect Hint**:"]
+    elif section == "indirect_hint":
+        starts = ["3. **Indirect hint:**", "### 3. Indirect Hint:", "3. **Indirect hint**:", 
+                  "### 3. Indirect hint:", "3. **Indirect Hint:**", "3. **Indirect Hint**:"]
+        stops = [None]  # Last section has no stop
+    
+    # Find the start and stop indices of the sections
+    start_idx = -1
+    stop_idx = len(full_response)
+    for start in starts:
+        index = full_response.find(start)
+        if index != -1:
+            start_idx = index + len(start)
+            break
+    
+    if start_idx == -1:  # No start found
+        return None
+    
+    for stop in stops:
+        if stop is not None:
+            index = full_response.find(stop, start_idx)
+            if index != -1:
+                stop_idx = index
+                break
+    
+    # Extract and return the section, if the start is found
+    return full_response[start_idx:stop_idx].strip()
+
+def split_response(csv_in, csv_out):
+    df = pd.read_csv(csv_in)
+    df['description'] = df['full_response'].apply(lambda x: extract_section(x, "description"))
+    df['direct_hint'] = df['full_response'].apply(lambda x: extract_section(x, "direct_hint"))
+    df['indirect_hint'] = df['full_response'].apply(lambda x: extract_section(x, "indirect_hint"))
+
+    # Count NA values in each of the specified columns
+    na_description = df['description'].isna().sum()
+    na_direct_hint = df['direct_hint'].isna().sum()
+    na_indirect_hint = df['indirect_hint'].isna().sum()
+
+    print(f"Number of NA's in Description: {na_description}")
+    print(f"Number of NA's in Direct Hint: {na_direct_hint}")
+    print(f"Number of NA's in Indirect Hint: {na_indirect_hint}")
+
+    df.to_csv(csv_out, index=False)
+    print("CSV file has been modified and saved.")
+
 if __name__ == "__main__":
     images_path = "FSC147_384_V2/selected_300_images" 
     csv_path = "FSC147_384_V2/300_image_labels.csv" 
     gpt4_evaluation_csv_path = "results/gpt4_evaluation.csv"
+    gpt4_splited_response = "results/gpt4_evaluation_splited.csv"
     # get_inital_count(images_path, csv_to_read=csv_path, csv_to_write=gpt4_evaluation_csv_path)
-    get_hints(images_path, csv_to_read=csv_path, csv_to_write=gpt4_evaluation_csv_path)
+    # get_hints(images_path, csv_to_read=csv_path, csv_to_write=gpt4_evaluation_csv_path)
+    split_response(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path)
