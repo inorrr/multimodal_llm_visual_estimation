@@ -1,13 +1,7 @@
 """
-Python Script Disclaimer
-
 Date: Dec 1, 2024
 Author: Yinuo Zhao
-Purpose: This script is designed to select random images from a specified directory, copy them to a new directory, and update a CSV file with image class and annotation details. It is intended for academic and research purposes to assist in data processing and analysis.
 Project: Improving Multi-modal Language Model on Object Counting with Self-Generated Side Information
-
-Note: This script is provided 'as is' without warranty. The user assumes all responsibility for its use and the results thereof. Please verify all outputs and data for accuracy.
-
 """
 
 import random

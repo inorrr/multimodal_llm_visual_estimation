@@ -1,3 +1,9 @@
+"""
+Date: Dec 4, 2024
+Author: Yinuo Zhao
+Project: Improving Multi-modal Language Model on Object Counting with Self-Generated Side Information
+"""
+
 import base64
 import pandas as pd
 
