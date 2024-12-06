@@ -299,3 +299,6 @@ if __name__ == "__main__":
     get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=True, direct=False, indirect=False)
     get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=False, direct=True, indirect=False)
     get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=False, direct=False, indirect=True)
+    # get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=True, direct=True, indirect=False)
+    # get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=False, direct=True, indirect=True)
+    # get_gpt_response_with_hints(csv_in=gpt4_evaluation_csv_path, csv_out=gpt4_evaluation_csv_path, description=True, direct=False, indirect=True)
