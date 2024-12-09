@@ -151,151 +151,151 @@ filename,class,object_count,human
 681.jpg,watches,24,24.0
 4645.jpg,geese,15,15.0
 4617.jpg,geese,17,18.0
-6449.jpg,beads,107,
-5372.jpg,marbles,31,
-5901.jpg,grapes,48,
-3467.jpg,beads,35,
-6099.jpg,chicken wings,26,
-207.jpg,balls,11,
-7524.jpg,shoes,37,
-7516.jpg,bowls,34,
-2029.jpg,sunglasses,79,
-6953.jpg,fishes,18,
-5965.jpg,cranes,92,
-3608.jpg,ice cream,37,
-7128.jpg,eggs,49,
-4250.jpg,cupcake tray,24,
-1999.jpg,bottle caps,83,
-3841.jpg,stairs,13,
-5079.jpg,chicken wings,27,
-2511.jpg,lipstick,74,
-5247.jpg,cupcakes,12,
-42.jpg,tomatoes,68,
-7217.jpg,plates,23,
-7600.jpg,bottle caps,452,
-3576.jpg,chicken wings,26,
-5660.jpg,donuts tray,19,
-2748.jpg,oranges,23,
-5721.jpg,bread rolls,16,
-1947.jpg,bottle caps,12,
-6691.jpg,geese,23,
-3882.jpg,beads,9,
-7668.jpg,eggs,23,
-6557.jpg,pigeons,55,
-2956.jpg,stamps,25,
-4549.jpg,flamingos,33,
-2540.jpg,spoon,31,
-5985.jpg,lipstick,16,
-5911.jpg,grapes,40,
-6.jpg,hot air balloons,9,
-6474.jpg,beads,21,
-4104.jpg,oyster shells,44,
-5553.jpg,kidney beans,15,
-283.jpg,penguins,8,
-2003.jpg,bottle caps,20,
-4448.jpg,tomatoes,21,
-3962.jpg,candles,37,
-3364.jpg,bread rolls,12,
-629.jpg,cranes,21,
-3377.jpg,bread rolls,12,
-6214.jpg,coins,44,
-897.jpg,plates,52,
-6827.jpg,sauce bottles,16,
-5531.jpg,pearls,16,
-736.jpg,ants,44,
-5930.jpg,eggs,14,
-2136.jpg,pens,11,
-2164.jpg,apples,23,
-7484.jpg,comic books,21,
-5438.jpg,biscuits,45,
-6070.jpg,flamingos,24,
-2590.jpg,alcohol bottles,56,
-3594.jpg,coffee beans,56,
-5889.jpg,grapes,27,
-6538.jpg,beads,102,
-4980.jpg,pigeons,10,
-3114.jpg,crab cakes,17,
-5984.jpg,lipstick,14,
-7506.jpg,carrom board pieces,19,
-6871.jpg,birds,17,
-2984.jpg,jeans,63,
-7250.jpg,pills,18,
-3996.jpg,beads,110,
-4769.jpg,balls,51,
-6935.jpg,nail polish,60,
-4545.jpg,flamingos,21,
-5106.jpg,chicken wings,23,
-5806.jpg,cashew nuts,46,
-5227.jpg,donuts tray,54,
-2092.jpg,pens,41,
-3436.jpg,polka dots,443,
-3229.jpg,kidney beans,92,
-686.jpg,apples,47,
-4233.jpg,cupcake tray,12,
-296.jpg,strawberries,30,
-6387.jpg,beads,13,
-6104.jpg,chicken wings,27,
-3281.jpg,finger foods,15,
-6388.jpg,beads,145,
-3190.jpg,candles,12,
-78.jpg,tomatoes,59,
-754.jpg,birds,9,
-7064.jpg,go game,276,
-6936.jpg,apples,111,
-638.jpg,cranes,38,
-3267.jpg,bullets,25,
-721.jpg,windows,12,
-388.jpg,pigeons,14,
-4162.jpg,macarons,18,
-753.jpg,birds,12,
-5778.jpg,cupcake tray,12,
-3352.jpg,bread rolls,12,
-3710.jpg,chewing gum pieces,14,
-7425.jpg,lipstick,30,
-5526.jpg,jade stones,25,
-3136.jpg,coffee beans,504,
-2207.jpg,apples,10,
-7618.jpg,spoon,12,
-6245.jpg,apples,12,
-6288.jpg,pills,18,
-5415.jpg,cotton balls,10,
-3395.jpg,bread rolls,12,
-5417.jpg,cotton balls,41,
-4836.jpg,grapes,42,
-2872.jpg,chairs,10,
-1053.jpg,sheep,207,
-1462.jpg,keyboard keys,409,
-7184.jpg,pencils,72,
-5047.jpg,polka dots,30,
-4372.jpg,cranes,18,
-4983.jpg,pigeons,8,
-4873.jpg,penguins,125,
-5362.jpg,marbles,18,
-7609.jpg,markers,110,
-596.jpg,seagulls,14,
-6993.jpg,sunglasses,90,
-7222.jpg,stamps,49,
-6834.jpg,roof tiles,270,
-1762.jpg,coins,166,
-653.jpg,cranes,13,
-4799.jpg,grapes,122,
-7610.jpg,flower pots,20,
-4243.jpg,cupcake tray,12,
-1977.jpg,bottle caps,132,
-3442.jpg,bees,59,
-2888.jpg,chairs,18,
-2871.jpg,chairs,48,
-5960.jpg,cranes,49,
-5200.jpg,donuts tray,8,
-2291.jpg,stapler pins,70,
-2793.jpg,cans,24,
-5323.jpg,candles,47,
-3454.jpg,beads,21,
-793.jpg,fishes,8,
-5152.jpg,toilet paper rolls,8,
-6075.jpg,flamingos,98,
-1572.jpg,carrom board pieces,25,
-566.jpg,flamingos,15,
-7638.jpg,windows,28,
-5995.jpg,lipstick,8,
-237.jpg,grapes,65,
+6449.jpg,beads,107,109.0
+5372.jpg,marbles,31,31.0
+5901.jpg,grapes,48,45.0
+3467.jpg,beads,35,35.0
+6099.jpg,chicken wings,26,26.0
+207.jpg,balls,11,11.0
+7524.jpg,shoes,37,38.0
+7516.jpg,bowls,34,35.0
+2029.jpg,sunglasses,79,72.0
+6953.jpg,fishes,18,18.0
+5965.jpg,cranes,92,92.0
+3608.jpg,ice cream,37,42.0
+7128.jpg,eggs,49,44.0
+4250.jpg,cupcake tray,24,24.0
+1999.jpg,bottle caps,83,81.0
+3841.jpg,stairs,13,14.0
+5079.jpg,chicken wings,27,27.0
+2511.jpg,lipstick,74,66.0
+5247.jpg,cupcakes,12,12.0
+42.jpg,tomatoes,68,55.0
+7217.jpg,plates,23,26.0
+7600.jpg,bottle caps,452,720.0
+3576.jpg,chicken wings,26,26.0
+5660.jpg,donuts tray,19,19.0
+2748.jpg,oranges,23,18.0
+5721.jpg,bread rolls,16,16.0
+1947.jpg,bottle caps,12,12.0
+6691.jpg,geese,23,28.0
+3882.jpg,beads,9,9.0
+7668.jpg,eggs,23,24.0
+6557.jpg,pigeons,55,55.0
+2956.jpg,stamps,25,25.0
+4549.jpg,flamingos,33,36.0
+2540.jpg,spoon,31,31.0
+5985.jpg,lipstick,16,16.0
+5911.jpg,grapes,40,40.0
+6.jpg,hot air balloons,9,9.0
+6474.jpg,beads,21,19.0
+4104.jpg,oyster shells,44,44.0
+5553.jpg,kidney beans,15,15.0
+283.jpg,penguins,8,8.0
+2003.jpg,bottle caps,20,21.0
+4448.jpg,tomatoes,21,30.0
+3962.jpg,candles,37,38.0
+3364.jpg,bread rolls,12,12.0
+629.jpg,cranes,21,21.0
+3377.jpg,bread rolls,12,12.0
+6214.jpg,coins,44,48.0
+897.jpg,plates,52,54.0
+6827.jpg,sauce bottles,16,16.0
+5531.jpg,pearls,16,16.0
+736.jpg,ants,44,41.0
+5930.jpg,eggs,14,14.0
+2136.jpg,pens,11,11.0
+2164.jpg,apples,23,23.0
+7484.jpg,comic books,21,21.0
+5438.jpg,biscuits,45,46.0
+6070.jpg,flamingos,24,25.0
+2590.jpg,alcohol bottles,56,42.0
+3594.jpg,coffee beans,56,60.0
+5889.jpg,grapes,27,28.0
+6538.jpg,beads,102,120.0
+4980.jpg,pigeons,10,9.0
+3114.jpg,crab cakes,17,16.0
+5984.jpg,lipstick,14,12.0
+7506.jpg,carrom board pieces,19,19.0
+6871.jpg,birds,17,18.0
+2984.jpg,jeans,63,65.0
+7250.jpg,pills,18,18.0
+3996.jpg,beads,110,110.0
+4769.jpg,balls,51,54.0
+6935.jpg,nail polish,60,69.0
+4545.jpg,flamingos,21,21.0
+5106.jpg,chicken wings,23,24.0
+5806.jpg,cashew nuts,46,45.0
+5227.jpg,donuts tray,54,54.0
+2092.jpg,pens,41,47.0
+3436.jpg,polka dots,443,450.0
+3229.jpg,kidney beans,92,85.0
+686.jpg,apples,47,48.0
+4233.jpg,cupcake tray,12,12.0
+296.jpg,strawberries,30,27.0
+6387.jpg,beads,13,13.0
+6104.jpg,chicken wings,27,24.0
+3281.jpg,finger foods,15,16.0
+6388.jpg,beads,145,174.0
+3190.jpg,candles,12,12.0
+78.jpg,tomatoes,59,60.0
+754.jpg,birds,9,8.0
+7064.jpg,go game,276,276.0
+6936.jpg,apples,111,116.0
+638.jpg,cranes,38,38.0
+3267.jpg,bullets,25,30.0
+721.jpg,windows,12,12.0
+388.jpg,pigeons,14,14.0
+4162.jpg,macarons,18,17.0
+753.jpg,birds,12,11.0
+5778.jpg,cupcake tray,12,12.0
+3352.jpg,bread rolls,12,12.0
+3710.jpg,chewing gum pieces,14,14.0
+7425.jpg,lipstick,30,30.0
+5526.jpg,jade stones,25,26.0
+3136.jpg,coffee beans,504,900.0
+2207.jpg,apples,10,10.0
+7618.jpg,spoon,12,12.0
+6245.jpg,apples,12,12.0
+6288.jpg,pills,18,18.0
+5415.jpg,cotton balls,10,10.0
+3395.jpg,bread rolls,12,12.0
+5417.jpg,cotton balls,41,38.0
+4836.jpg,grapes,42,48.0
+2872.jpg,chairs,10,10.0
+1053.jpg,sheep,207,121.0
+1462.jpg,keyboard keys,409,400.0
+7184.jpg,pencils,72,80.0
+5047.jpg,polka dots,30,30.0
+4372.jpg,cranes,18,19.0
+4983.jpg,pigeons,8,8.0
+4873.jpg,penguins,125,130.0
+5362.jpg,marbles,18,18.0
+7609.jpg,markers,110,115.0
+596.jpg,seagulls,14,13.0
+6993.jpg,sunglasses,90,82.0
+7222.jpg,stamps,49,51.0
+6834.jpg,roof tiles,270,270.0
+1762.jpg,coins,166,100.0
+653.jpg,cranes,13,13.0
+4799.jpg,grapes,122,110.0
+7610.jpg,flower pots,20,20.0
+4243.jpg,cupcake tray,12,12.0
+1977.jpg,bottle caps,132,130.0
+3442.jpg,bees,59,68.0
+2888.jpg,chairs,18,18.0
+2871.jpg,chairs,48,33.0
+5960.jpg,cranes,49,45.0
+5200.jpg,donuts tray,8,8.0
+2291.jpg,stapler pins,70,2.0
+2793.jpg,cans,24,24.0
+5323.jpg,candles,47,48.0
+3454.jpg,beads,21,21.0
+793.jpg,fishes,8,8.0
+5152.jpg,toilet paper rolls,8,8.0
+6075.jpg,flamingos,98,100.0
+1572.jpg,carrom board pieces,25,25.0
+566.jpg,flamingos,15,14.0
+7638.jpg,windows,28,28.0
+5995.jpg,lipstick,8,8.0
+237.jpg,grapes,65,60.0
