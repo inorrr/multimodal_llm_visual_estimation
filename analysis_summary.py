@@ -37,7 +37,7 @@ def scatter_plot():
     # Adding labels and title
     ax.set_xlabel('Class')
     ax.set_ylabel('Object Count')
-    ax.set_title('Scatter Plot of Object Counts by Class with Horizontal Color Bar')
+    ax.set_title('Scatter Plot of Object Counts by Class')
 
     # Adding a horizontal color bar
     cbar = plt.colorbar(scatter, orientation='vertical')
@@ -110,12 +110,32 @@ def count_size():
     print("Count 2 (20 <= object_count < 100):", count2)
     print("Count 3 (object_count >= 100):", count3) 
 
+    unique_categories = true_data['class'].nunique()
+
+    print("Number of unique categories:", unique_categories)
+
+    mean_count = true_data['object_count'].mean()
+
+    print(f"Mean of object_count: {mean_count}")
+
+
+    # Calculate the minimum and maximum values
+    min_count = true_data['object_count'].min()
+    max_count = true_data['object_count'].max()
+
+    # Calculate the range
+    count_range = max_count - min_count
+
+    print(f"Minimum count: {min_count}")
+    print(f"Maximum count: {max_count}")
+    print(f"Range of count: {count_range}")
+
 def main():
     # true_count_boxplot()
-    # scatter_plot()
+    scatter_plot()
     # human_performance()
     # gpt_performance()
-    count_size()
+    # count_size()
 
 if __name__ == "__main__":
     main()
