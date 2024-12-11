@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrrr}
+\hline
+ Method          &   Overall performance &   Count \ensuremath{<} 20 performance &   20 \ensuremath{<}= Count \ensuremath{<} 100 performance &   Count \ensuremath{>}= 100 performance &   Number of NA (cannot count) \\
+\hline
+ Human           &               34.9017 &                 0.543214 &                         7.40843 &                    95.7794 &                             0 \\
+ GPT initial     &               66.821  &                 4.13204  &                        23.8979  &                   203.234  &                            14 \\
+ GPT all hints   &               42.0768 &                 3.47983  &                        20.7994  &                   134.031  &                            36 \\
+ GPT description &               72.8034 &                 3.97946  &                        22.2453  &                   209.205  &                             6 \\
+ GPT direct      &               46.3619 &                 3.51227  &                        22.7303  &                   142.402  &                            23 \\
+ GPT indirect    &               69.9095 &                 3.83042  &                        22.5732  &                   204.776  &                            11 \\
+\hline
+\end{tabular}

@@ -28,7 +28,7 @@ def side_information_prompt(object_name):
     prompt = f"""
     Please generate informations that can help someone on counting the number of {object_name} in this image. You need to provide the following:\n
     1. Description: details of the objects in this image.\n
-    2. Direct hint: guidlines on methods to count the number of objects\n
+    2. Direct hint: guidelines on methods to count the number of objects\n
     3. Indirect hint: the contextual or background information about the object that will help in counting.\n
     For example, if you are seeing an image of geese, you should provide the following:\n
     1. Description: The image features a group of Canada geese in flight against a clear blue sky. The geese are dispersed across the image in various flight positions, with their wings in different phases of the flapping cycle.\n

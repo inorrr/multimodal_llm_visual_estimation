@@ -1,6 +1,7 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from tabulate import tabulate
 
 gpt4_evaluation = "results/gpt4_evaluation.csv"
 true_count = "FSC147_384_V2/300_image_labels.csv"
@@ -75,9 +76,9 @@ def gpt_performance():
     # Create a scatter plot
     plt.figure(figsize=(8, 6))
     plt.scatter(df['object_count'], df['gpt_4_initial_answer'], color='blue', alpha=0.6)
-    # plt.scatter(df['object_count'], df['response_desc_true_direct_true_indirect_true'], color='green', alpha=0.6)
+    plt.scatter(df['object_count'], df['response_desc_true_direct_true_indirect_true'], color='green', alpha=0.6)
     # plt.scatter(df['object_count'], df['response_desc_true_direct_false_indirect_false'], color='red', alpha=0.6)
-    plt.scatter(df['object_count'], df['response_desc_false_direct_true_indirect_false'], color='yellow', alpha=0.6)
+    # plt.scatter(df['object_count'], df['response_desc_false_direct_true_indirect_false'], color='yellow', alpha=0.6)
     # plt.scatter(df['object_count'], df['response_desc_false_direct_false_indirect_true'], color='pink', alpha=0.6)
 
     # Add a line of perfect agreement
@@ -130,12 +131,27 @@ def count_size():
     print(f"Maximum count: {max_count}")
     print(f"Range of count: {count_range}")
 
+
+def csv_to_latex():
+    csv_path = "results/rmse_evaluation.csv"
+    df = pd.read_csv(csv_path)  
+
+    latex_table = tabulate(df, tablefmt="latex", headers="keys", showindex="never")
+    
+    output_file_path = 'results/rmse_latex.txt'
+
+    with open(output_file_path, 'w') as file:
+        file.write(latex_table)
+    print(f"LaTeX table has been saved to {output_file_path}")
+
+
 def main():
     # true_count_boxplot()
-    scatter_plot()
-    # human_performance()
+    # scatter_plot()
+     human_performance()
     # gpt_performance()
     # count_size()
+    # csv_to_latex()
 
 if __name__ == "__main__":
     main()
