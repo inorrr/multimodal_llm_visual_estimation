@@ -72,14 +72,17 @@ def human_performance():
 def gpt_performance():
 
     df = gpt_data
-    #df = df[df['object_count'] <= 800]
+    human_df=human_data
     # Create a scatter plot
+    marker_size = 20  # Adjust this value as needed, smaller numbers mean smaller dots
     plt.figure(figsize=(8, 6))
-    plt.scatter(df['object_count'], df['gpt_4_initial_answer'], color='blue', alpha=0.6)
-    plt.scatter(df['object_count'], df['response_desc_true_direct_true_indirect_true'], color='green', alpha=0.6)
-    # plt.scatter(df['object_count'], df['response_desc_true_direct_false_indirect_false'], color='red', alpha=0.6)
-    # plt.scatter(df['object_count'], df['response_desc_false_direct_true_indirect_false'], color='yellow', alpha=0.6)
-    # plt.scatter(df['object_count'], df['response_desc_false_direct_false_indirect_true'], color='pink', alpha=0.6)
+
+    plt.scatter(human_df['object_count'], human_df['human'], color='orange', alpha=0.5, s=marker_size, label='Human')
+    plt.scatter(df['object_count'], df['gpt_4_initial_answer'], color='blue', alpha=0.3, s=marker_size, label='GPT4: Vanilla ')
+    plt.scatter(df['object_count'], df['response_desc_true_direct_true_indirect_true'], color='green', alpha=0.3, s=marker_size, label='GPT4: all info')
+    # plt.scatter(df['object_count'], df['response_desc_true_direct_false_indirect_false'], color='red', alpha=0.3, s=marker_size, label='GPT4: Description Only')
+    # plt.scatter(df['object_count'], df['response_desc_false_direct_true_indirect_false'], color='yellow', alpha=0.3, s=marker_size, label='GPT4: Direct Hint Only')
+    # plt.scatter(df['object_count'], df['response_desc_false_direct_false_indirect_true'], color='pink', alpha=0.3, s=marker_size, label='GPT4: Indirect Hint Only')
 
     # Add a line of perfect agreement
     plt.plot([min(df['object_count']), max(df['object_count'])], [min(df['object_count']), max(df['object_count'])], color='red', linestyle='--')
@@ -87,46 +90,30 @@ def gpt_performance():
     # Labeling the plot
     plt.xlabel('True Count')
     plt.ylabel('GPT4 Count')
-    plt.title('Comparison of Initial Count vs. Hinted Count')
+    plt.title('Comparison of GPT4 Performance with Different Side Information')
     plt.grid(True)
-
-    # Add annotations for clarity
-    # for i, row in df.iterrows():
-    #     plt.annotate(row['filename'], (row['object_count'] + 0.5, row['human']), textcoords="offset points", xytext=(0,10), ha='center')
+    plt.legend()  # This will display the legend
 
     plt.show()
 
 def count_size():
-    # Count the number of rows where 'object_count' is less than 20
-    # Count the number of rows where 'object_count' is less than 20
+ 
     count1 = (true_data['object_count'] < 20).sum()
-
-    # Count the number of rows where 'object_count' is between 20 and 99 (inclusive of 20, exclusive of 100)
     count2 = ((true_data['object_count'] >= 20) & (true_data['object_count'] < 100)).sum()
-
-    # Count the number of rows where 'object_count' is 100 or more
     count3 = (true_data['object_count'] >= 100).sum()
-
     print("Count 1 (object_count < 20):", count1)
     print("Count 2 (20 <= object_count < 100):", count2)
     print("Count 3 (object_count >= 100):", count3) 
 
     unique_categories = true_data['class'].nunique()
-
     print("Number of unique categories:", unique_categories)
 
     mean_count = true_data['object_count'].mean()
-
     print(f"Mean of object_count: {mean_count}")
 
-
-    # Calculate the minimum and maximum values
     min_count = true_data['object_count'].min()
     max_count = true_data['object_count'].max()
-
-    # Calculate the range
     count_range = max_count - min_count
-
     print(f"Minimum count: {min_count}")
     print(f"Maximum count: {max_count}")
     print(f"Range of count: {count_range}")
@@ -148,8 +135,8 @@ def csv_to_latex():
 def main():
     # true_count_boxplot()
     # scatter_plot()
-     human_performance()
-    # gpt_performance()
+    # human_performance()
+    gpt_performance()
     # count_size()
     # csv_to_latex()
 
