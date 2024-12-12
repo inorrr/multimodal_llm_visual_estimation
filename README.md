@@ -9,7 +9,7 @@ This is the complete repository for the project: **Improving Multi-modal Languag
 2. **DONE:** Preprocess the dataset: 
     - **DONE:** select 300 images
     - **DONE:** extract the true count from annotion json -> len(annotations[filename]['points'])
-3. **WORKING:** Human accuracy
+3. **DONE:** Human accuracy
 4. **DONE:** gpt4: 
     - **DONE:** gpt4 initial prediction.
     - **DONE:** gpt4 hints: description, direct hint, indirect hint
@@ -19,20 +19,11 @@ This is the complete repository for the project: **Improving Multi-modal Languag
         - **DONE:** direct hint only
         - **DONE:** indirect hint only
         - **DONE:** ll three
-4. CLIP: 
-    - CLIP initial prediction.
-    - CLIP hints: description, direct hint, indirect hint
-        - split the hints to three entries
-    - CLIP prediction with hint:
-        - Description only
-        - direct hint only
-        - indirect hint only
-        - all three
-5. Performance Analysis
-    - Figures and Tables
+5. **DONE:** Performance Analysis
+    - **DONE:** Figures and Tables
 6. Report
     - Written Part
-    - Figues
+    - Related work (citation)
 
 
 
