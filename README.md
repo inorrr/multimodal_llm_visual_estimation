@@ -1,7 +1,7 @@
 # VisionClue
 
-Access the full report at: [link](https://github.com/inorrr/multimodal_llm_visual_estimation/blob/main/report.pdf)
-Contributor: [Yinuo Zhao](https://github.com/inorrr), [Yuanyi Liu](https://github.com/leoyliu)
+- Access the full report at: [link](https://github.com/inorrr/multimodal_llm_visual_estimation/blob/main/report.pdf)
+- Contributor: [Yinuo Zhao](https://github.com/inorrr), [Yuanyi Liu](https://github.com/leoyliu)
 
 ## Overview
 
