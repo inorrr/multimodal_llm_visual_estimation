@@ -4,6 +4,8 @@
 
 VisionClue is a two-stage prompting strategy designed to improve the performance of multi-modal language models on object counting tasks in images. This repository contains the code and documentation used to implement VisionClue, which uses self-generated hints to enhance model accuracy without additional data requirements.
 
+![Alt text](plots/visionclue.png)
+
 ## Repository Structure
 
 - `FSC147_384_V2/`: Scripts for preprocessing the FSC147 dataset.
