@@ -1,5 +1,7 @@
 # VisionClue
 
+Access the full report at: [link]([https://www.google.com](https://github.com/inorrr/multimodal_llm_visual_estimation/blob/main/report.pdf))
+
 ## Overview
 
 VisionClue is a two-stage prompting strategy designed to improve the performance of multi-modal language models on object counting tasks in images. This repository contains the code and documentation used to implement VisionClue, which uses self-generated hints to enhance model accuracy without additional data requirements.
